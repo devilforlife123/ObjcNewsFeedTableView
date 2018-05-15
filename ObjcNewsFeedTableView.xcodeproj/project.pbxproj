@@ -1,0 +1,656 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D64F517420AB0BD200B44B40 /* CustomLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = D64F517320AB0BD200B44B40 /* CustomLabel.m */; };
+		D6FBF58620A9AB8C0071C0B4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D6FBF58520A9AB8C0071C0B4 /* AppDelegate.m */; };
+		D6FBF58E20A9AB8E0071C0B4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D6FBF58D20A9AB8E0071C0B4 /* Assets.xcassets */; };
+		D6FBF59120A9AB8E0071C0B4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6FBF58F20A9AB8E0071C0B4 /* LaunchScreen.storyboard */; };
+		D6FBF59420A9AB8E0071C0B4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D6FBF59320A9AB8E0071C0B4 /* main.m */; };
+		D6FBF59E20A9AB8E0071C0B4 /* ObjcNewsFeedTableViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D6FBF59D20A9AB8E0071C0B4 /* ObjcNewsFeedTableViewTests.m */; };
+		D6FBF5A920A9AB8E0071C0B4 /* ObjcNewsFeedTableViewUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = D6FBF5A820A9AB8E0071C0B4 /* ObjcNewsFeedTableViewUITests.m */; };
+		D6FBF5BD20A9AF160071C0B4 /* MainTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6FBF5BC20A9AF160071C0B4 /* MainTableViewController.m */; };
+		D6FBF5C020A9AF5B0071C0B4 /* HudLoading.m in Sources */ = {isa = PBXBuildFile; fileRef = D6FBF5BF20A9AF5B0071C0B4 /* HudLoading.m */; };
+		D6FBF5C320A9AFA60071C0B4 /* NewsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D6FBF5C220A9AFA60071C0B4 /* NewsTableViewCell.m */; };
+		D6FBF5C620A9AFDD0071C0B4 /* News.m in Sources */ = {isa = PBXBuildFile; fileRef = D6FBF5C520A9AFDD0071C0B4 /* News.m */; };
+		D6FBF5C920A9AFFE0071C0B4 /* NewsBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = D6FBF5C820A9AFFE0071C0B4 /* NewsBuilder.m */; };
+		D6FBF5CC20A9B08A0071C0B4 /* UIImageView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = D6FBF5CB20A9B08A0071C0B4 /* UIImageView+Extension.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D6FBF59A20A9AB8E0071C0B4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D6FBF57920A9AB8C0071C0B4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D6FBF58020A9AB8C0071C0B4;
+			remoteInfo = ObjcNewsFeedTableView;
+		};
+		D6FBF5A520A9AB8E0071C0B4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D6FBF57920A9AB8C0071C0B4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D6FBF58020A9AB8C0071C0B4;
+			remoteInfo = ObjcNewsFeedTableView;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D64F517220AB0BD200B44B40 /* CustomLabel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomLabel.h; sourceTree = "<group>"; };
+		D64F517320AB0BD200B44B40 /* CustomLabel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomLabel.m; sourceTree = "<group>"; };
+		D6FBF58120A9AB8C0071C0B4 /* ObjcNewsFeedTableView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ObjcNewsFeedTableView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D6FBF58420A9AB8C0071C0B4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		D6FBF58520A9AB8C0071C0B4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		D6FBF58D20A9AB8E0071C0B4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D6FBF59020A9AB8E0071C0B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D6FBF59220A9AB8E0071C0B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D6FBF59320A9AB8E0071C0B4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D6FBF59920A9AB8E0071C0B4 /* ObjcNewsFeedTableViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ObjcNewsFeedTableViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D6FBF59D20A9AB8E0071C0B4 /* ObjcNewsFeedTableViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ObjcNewsFeedTableViewTests.m; sourceTree = "<group>"; };
+		D6FBF59F20A9AB8E0071C0B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D6FBF5A420A9AB8E0071C0B4 /* ObjcNewsFeedTableViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ObjcNewsFeedTableViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D6FBF5A820A9AB8E0071C0B4 /* ObjcNewsFeedTableViewUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ObjcNewsFeedTableViewUITests.m; sourceTree = "<group>"; };
+		D6FBF5AA20A9AB8E0071C0B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D6FBF5BB20A9AF160071C0B4 /* MainTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainTableViewController.h; sourceTree = "<group>"; };
+		D6FBF5BC20A9AF160071C0B4 /* MainTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainTableViewController.m; sourceTree = "<group>"; };
+		D6FBF5BE20A9AF5B0071C0B4 /* HudLoading.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HudLoading.h; sourceTree = "<group>"; };
+		D6FBF5BF20A9AF5B0071C0B4 /* HudLoading.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HudLoading.m; sourceTree = "<group>"; };
+		D6FBF5C120A9AFA60071C0B4 /* NewsTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NewsTableViewCell.h; sourceTree = "<group>"; };
+		D6FBF5C220A9AFA60071C0B4 /* NewsTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NewsTableViewCell.m; sourceTree = "<group>"; };
+		D6FBF5C420A9AFDD0071C0B4 /* News.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = News.h; sourceTree = "<group>"; };
+		D6FBF5C520A9AFDD0071C0B4 /* News.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = News.m; sourceTree = "<group>"; };
+		D6FBF5C720A9AFFE0071C0B4 /* NewsBuilder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NewsBuilder.h; sourceTree = "<group>"; };
+		D6FBF5C820A9AFFE0071C0B4 /* NewsBuilder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NewsBuilder.m; sourceTree = "<group>"; };
+		D6FBF5CA20A9B08A0071C0B4 /* UIImageView+Extension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImageView+Extension.h"; sourceTree = "<group>"; };
+		D6FBF5CB20A9B08A0071C0B4 /* UIImageView+Extension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+Extension.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D6FBF57E20A9AB8C0071C0B4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D6FBF59620A9AB8E0071C0B4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D6FBF5A120A9AB8E0071C0B4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D6FBF57820A9AB8C0071C0B4 = {
+			isa = PBXGroup;
+			children = (
+				D6FBF58320A9AB8C0071C0B4 /* ObjcNewsFeedTableView */,
+				D6FBF59C20A9AB8E0071C0B4 /* ObjcNewsFeedTableViewTests */,
+				D6FBF5A720A9AB8E0071C0B4 /* ObjcNewsFeedTableViewUITests */,
+				D6FBF58220A9AB8C0071C0B4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D6FBF58220A9AB8C0071C0B4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D6FBF58120A9AB8C0071C0B4 /* ObjcNewsFeedTableView.app */,
+				D6FBF59920A9AB8E0071C0B4 /* ObjcNewsFeedTableViewTests.xctest */,
+				D6FBF5A420A9AB8E0071C0B4 /* ObjcNewsFeedTableViewUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D6FBF58320A9AB8C0071C0B4 /* ObjcNewsFeedTableView */ = {
+			isa = PBXGroup;
+			children = (
+				D6FBF59220A9AB8E0071C0B4 /* Info.plist */,
+				D6FBF5CE20A9B0EA0071C0B4 /* Assets */,
+				D6FBF5CD20A9B0C60071C0B4 /* Storyboards & Xibs */,
+				D6FBF5BA20A9AC0E0071C0B4 /* Others */,
+				D6FBF5B920A9ABF70071C0B4 /* Extensions */,
+				D6FBF5B820A9ABE20071C0B4 /* Models */,
+				D6FBF5B720A9ABDB0071C0B4 /* Views */,
+				D6FBF5B620A9ABBF0071C0B4 /* ViewControllers */,
+			);
+			path = ObjcNewsFeedTableView;
+			sourceTree = "<group>";
+		};
+		D6FBF59C20A9AB8E0071C0B4 /* ObjcNewsFeedTableViewTests */ = {
+			isa = PBXGroup;
+			children = (
+				D6FBF59D20A9AB8E0071C0B4 /* ObjcNewsFeedTableViewTests.m */,
+				D6FBF59F20A9AB8E0071C0B4 /* Info.plist */,
+			);
+			path = ObjcNewsFeedTableViewTests;
+			sourceTree = "<group>";
+		};
+		D6FBF5A720A9AB8E0071C0B4 /* ObjcNewsFeedTableViewUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D6FBF5A820A9AB8E0071C0B4 /* ObjcNewsFeedTableViewUITests.m */,
+				D6FBF5AA20A9AB8E0071C0B4 /* Info.plist */,
+			);
+			path = ObjcNewsFeedTableViewUITests;
+			sourceTree = "<group>";
+		};
+		D6FBF5B620A9ABBF0071C0B4 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				D6FBF5BB20A9AF160071C0B4 /* MainTableViewController.h */,
+				D6FBF5BC20A9AF160071C0B4 /* MainTableViewController.m */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		D6FBF5B720A9ABDB0071C0B4 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D6FBF5BE20A9AF5B0071C0B4 /* HudLoading.h */,
+				D6FBF5BF20A9AF5B0071C0B4 /* HudLoading.m */,
+				D6FBF5C120A9AFA60071C0B4 /* NewsTableViewCell.h */,
+				D6FBF5C220A9AFA60071C0B4 /* NewsTableViewCell.m */,
+				D64F517220AB0BD200B44B40 /* CustomLabel.h */,
+				D64F517320AB0BD200B44B40 /* CustomLabel.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D6FBF5B820A9ABE20071C0B4 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D6FBF5C420A9AFDD0071C0B4 /* News.h */,
+				D6FBF5C520A9AFDD0071C0B4 /* News.m */,
+				D6FBF5C720A9AFFE0071C0B4 /* NewsBuilder.h */,
+				D6FBF5C820A9AFFE0071C0B4 /* NewsBuilder.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		D6FBF5B920A9ABF70071C0B4 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				D6FBF5CA20A9B08A0071C0B4 /* UIImageView+Extension.h */,
+				D6FBF5CB20A9B08A0071C0B4 /* UIImageView+Extension.m */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		D6FBF5BA20A9AC0E0071C0B4 /* Others */ = {
+			isa = PBXGroup;
+			children = (
+				D6FBF59320A9AB8E0071C0B4 /* main.m */,
+				D6FBF58420A9AB8C0071C0B4 /* AppDelegate.h */,
+				D6FBF58520A9AB8C0071C0B4 /* AppDelegate.m */,
+			);
+			path = Others;
+			sourceTree = "<group>";
+		};
+		D6FBF5CD20A9B0C60071C0B4 /* Storyboards & Xibs */ = {
+			isa = PBXGroup;
+			children = (
+				D6FBF58F20A9AB8E0071C0B4 /* LaunchScreen.storyboard */,
+			);
+			path = "Storyboards & Xibs";
+			sourceTree = "<group>";
+		};
+		D6FBF5CE20A9B0EA0071C0B4 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				D6FBF58D20A9AB8E0071C0B4 /* Assets.xcassets */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D6FBF58020A9AB8C0071C0B4 /* ObjcNewsFeedTableView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D6FBF5AD20A9AB8E0071C0B4 /* Build configuration list for PBXNativeTarget "ObjcNewsFeedTableView" */;
+			buildPhases = (
+				D6FBF57D20A9AB8C0071C0B4 /* Sources */,
+				D6FBF57E20A9AB8C0071C0B4 /* Frameworks */,
+				D6FBF57F20A9AB8C0071C0B4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ObjcNewsFeedTableView;
+			productName = ObjcNewsFeedTableView;
+			productReference = D6FBF58120A9AB8C0071C0B4 /* ObjcNewsFeedTableView.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D6FBF59820A9AB8E0071C0B4 /* ObjcNewsFeedTableViewTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D6FBF5B020A9AB8E0071C0B4 /* Build configuration list for PBXNativeTarget "ObjcNewsFeedTableViewTests" */;
+			buildPhases = (
+				D6FBF59520A9AB8E0071C0B4 /* Sources */,
+				D6FBF59620A9AB8E0071C0B4 /* Frameworks */,
+				D6FBF59720A9AB8E0071C0B4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D6FBF59B20A9AB8E0071C0B4 /* PBXTargetDependency */,
+			);
+			name = ObjcNewsFeedTableViewTests;
+			productName = ObjcNewsFeedTableViewTests;
+			productReference = D6FBF59920A9AB8E0071C0B4 /* ObjcNewsFeedTableViewTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D6FBF5A320A9AB8E0071C0B4 /* ObjcNewsFeedTableViewUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D6FBF5B320A9AB8E0071C0B4 /* Build configuration list for PBXNativeTarget "ObjcNewsFeedTableViewUITests" */;
+			buildPhases = (
+				D6FBF5A020A9AB8E0071C0B4 /* Sources */,
+				D6FBF5A120A9AB8E0071C0B4 /* Frameworks */,
+				D6FBF5A220A9AB8E0071C0B4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D6FBF5A620A9AB8E0071C0B4 /* PBXTargetDependency */,
+			);
+			name = ObjcNewsFeedTableViewUITests;
+			productName = ObjcNewsFeedTableViewUITests;
+			productReference = D6FBF5A420A9AB8E0071C0B4 /* ObjcNewsFeedTableViewUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D6FBF57920A9AB8C0071C0B4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = "suraj poudel";
+				TargetAttributes = {
+					D6FBF58020A9AB8C0071C0B4 = {
+						CreatedOnToolsVersion = 9.3;
+					};
+					D6FBF59820A9AB8E0071C0B4 = {
+						CreatedOnToolsVersion = 9.3;
+						TestTargetID = D6FBF58020A9AB8C0071C0B4;
+					};
+					D6FBF5A320A9AB8E0071C0B4 = {
+						CreatedOnToolsVersion = 9.3;
+						TestTargetID = D6FBF58020A9AB8C0071C0B4;
+					};
+				};
+			};
+			buildConfigurationList = D6FBF57C20A9AB8C0071C0B4 /* Build configuration list for PBXProject "ObjcNewsFeedTableView" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D6FBF57820A9AB8C0071C0B4;
+			productRefGroup = D6FBF58220A9AB8C0071C0B4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D6FBF58020A9AB8C0071C0B4 /* ObjcNewsFeedTableView */,
+				D6FBF59820A9AB8E0071C0B4 /* ObjcNewsFeedTableViewTests */,
+				D6FBF5A320A9AB8E0071C0B4 /* ObjcNewsFeedTableViewUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D6FBF57F20A9AB8C0071C0B4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D6FBF59120A9AB8E0071C0B4 /* LaunchScreen.storyboard in Resources */,
+				D6FBF58E20A9AB8E0071C0B4 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D6FBF59720A9AB8E0071C0B4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D6FBF5A220A9AB8E0071C0B4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D6FBF57D20A9AB8C0071C0B4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D6FBF5BD20A9AF160071C0B4 /* MainTableViewController.m in Sources */,
+				D6FBF5C320A9AFA60071C0B4 /* NewsTableViewCell.m in Sources */,
+				D6FBF5C620A9AFDD0071C0B4 /* News.m in Sources */,
+				D6FBF59420A9AB8E0071C0B4 /* main.m in Sources */,
+				D6FBF5C020A9AF5B0071C0B4 /* HudLoading.m in Sources */,
+				D6FBF5C920A9AFFE0071C0B4 /* NewsBuilder.m in Sources */,
+				D6FBF5CC20A9B08A0071C0B4 /* UIImageView+Extension.m in Sources */,
+				D6FBF58620A9AB8C0071C0B4 /* AppDelegate.m in Sources */,
+				D64F517420AB0BD200B44B40 /* CustomLabel.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D6FBF59520A9AB8E0071C0B4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D6FBF59E20A9AB8E0071C0B4 /* ObjcNewsFeedTableViewTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D6FBF5A020A9AB8E0071C0B4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D6FBF5A920A9AB8E0071C0B4 /* ObjcNewsFeedTableViewUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D6FBF59B20A9AB8E0071C0B4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D6FBF58020A9AB8C0071C0B4 /* ObjcNewsFeedTableView */;
+			targetProxy = D6FBF59A20A9AB8E0071C0B4 /* PBXContainerItemProxy */;
+		};
+		D6FBF5A620A9AB8E0071C0B4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D6FBF58020A9AB8C0071C0B4 /* ObjcNewsFeedTableView */;
+			targetProxy = D6FBF5A520A9AB8E0071C0B4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D6FBF58F20A9AB8E0071C0B4 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D6FBF59020A9AB8E0071C0B4 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D6FBF5AB20A9AB8E0071C0B4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		D6FBF5AC20A9AB8E0071C0B4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D6FBF5AE20A9AB8E0071C0B4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ObjcNewsFeedTableView/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = pyroTech.ObjcNewsFeedTableView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D6FBF5AF20A9AB8E0071C0B4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ObjcNewsFeedTableView/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = pyroTech.ObjcNewsFeedTableView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D6FBF5B120A9AB8E0071C0B4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ObjcNewsFeedTableViewTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = pyroTech.ObjcNewsFeedTableViewTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ObjcNewsFeedTableView.app/ObjcNewsFeedTableView";
+			};
+			name = Debug;
+		};
+		D6FBF5B220A9AB8E0071C0B4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ObjcNewsFeedTableViewTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = pyroTech.ObjcNewsFeedTableViewTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ObjcNewsFeedTableView.app/ObjcNewsFeedTableView";
+			};
+			name = Release;
+		};
+		D6FBF5B420A9AB8E0071C0B4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ObjcNewsFeedTableViewUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = pyroTech.ObjcNewsFeedTableViewUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ObjcNewsFeedTableView;
+			};
+			name = Debug;
+		};
+		D6FBF5B520A9AB8E0071C0B4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ObjcNewsFeedTableViewUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = pyroTech.ObjcNewsFeedTableViewUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ObjcNewsFeedTableView;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D6FBF57C20A9AB8C0071C0B4 /* Build configuration list for PBXProject "ObjcNewsFeedTableView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D6FBF5AB20A9AB8E0071C0B4 /* Debug */,
+				D6FBF5AC20A9AB8E0071C0B4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D6FBF5AD20A9AB8E0071C0B4 /* Build configuration list for PBXNativeTarget "ObjcNewsFeedTableView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D6FBF5AE20A9AB8E0071C0B4 /* Debug */,
+				D6FBF5AF20A9AB8E0071C0B4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D6FBF5B020A9AB8E0071C0B4 /* Build configuration list for PBXNativeTarget "ObjcNewsFeedTableViewTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D6FBF5B120A9AB8E0071C0B4 /* Debug */,
+				D6FBF5B220A9AB8E0071C0B4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D6FBF5B320A9AB8E0071C0B4 /* Build configuration list for PBXNativeTarget "ObjcNewsFeedTableViewUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D6FBF5B420A9AB8E0071C0B4 /* Debug */,
+				D6FBF5B520A9AB8E0071C0B4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D6FBF57920A9AB8C0071C0B4 /* Project object */;
+}
