@@ -10,7 +10,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ObjcNewsFeedTableView/Views/NewsTableViewCell.m"
-            timestampString = "548107482.610921"
+            timestampString = "548686659.496989"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "164"
@@ -26,7 +26,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ObjcNewsFeedTableView/Views/NewsTableViewCell.m"
-            timestampString = "548107482.611307"
+            timestampString = "548686659.497649"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "36"
@@ -42,12 +42,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ObjcNewsFeedTableView/Views/NewsTableViewCell.m"
-            timestampString = "548107482.6115741"
+            timestampString = "548686659.498013"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "105"
             endingLineNumber = "105"
-            landmarkName = "+heightForHeadline:constrainedToWidth:"
+            landmarkName = "+heightForSlugline:constrainedToWidth:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -58,7 +58,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ObjcNewsFeedTableView/Views/NewsTableViewCell.m"
-            timestampString = "548107482.611938"
+            timestampString = "548686659.498389"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "67"
@@ -74,12 +74,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ObjcNewsFeedTableView/Views/NewsTableViewCell.m"
-            timestampString = "548107482.612209"
+            timestampString = "548686659.498688"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "116"
             endingLineNumber = "116"
-            landmarkName = "+heightForSlugline:constrainedToWidth:"
+            landmarkName = "-awakeFromNib"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -90,7 +90,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ObjcNewsFeedTableView/Views/NewsTableViewCell.m"
-            timestampString = "548107482.612461"
+            timestampString = "548686659.498968"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "145"
@@ -106,7 +106,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ObjcNewsFeedTableView/Views/NewsTableViewCell.m"
-            timestampString = "548107482.612704"
+            timestampString = "548686659.499373"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "154"
@@ -122,12 +122,28 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ObjcNewsFeedTableView/Views/NewsTableViewCell.m"
-            timestampString = "548107482.612934"
+            timestampString = "548686659.499611"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "45"
             endingLineNumber = "45"
             landmarkName = "-initWithReuseIdentifier:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ObjcNewsFeedTableView/ViewControllers/MainTableViewController.m"
+            timestampString = "548687064.572368"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "86"
+            endingLineNumber = "86"
+            landmarkName = "-makeDataRequests"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

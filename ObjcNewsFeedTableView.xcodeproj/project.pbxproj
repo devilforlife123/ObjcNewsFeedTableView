@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		D64F517420AB0BD200B44B40 /* CustomLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = D64F517320AB0BD200B44B40 /* CustomLabel.m */; };
+		D66B076120B44999005C4171 /* NewsFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = D66B076020B44999005C4171 /* NewsFetcher.m */; };
 		D6FBF58620A9AB8C0071C0B4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D6FBF58520A9AB8C0071C0B4 /* AppDelegate.m */; };
 		D6FBF58E20A9AB8E0071C0B4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D6FBF58D20A9AB8E0071C0B4 /* Assets.xcassets */; };
 		D6FBF59120A9AB8E0071C0B4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6FBF58F20A9AB8E0071C0B4 /* LaunchScreen.storyboard */; };
@@ -42,6 +43,8 @@
 /* Begin PBXFileReference section */
 		D64F517220AB0BD200B44B40 /* CustomLabel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomLabel.h; sourceTree = "<group>"; };
 		D64F517320AB0BD200B44B40 /* CustomLabel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomLabel.m; sourceTree = "<group>"; };
+		D66B075F20B44999005C4171 /* NewsFetcher.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NewsFetcher.h; sourceTree = "<group>"; };
+		D66B076020B44999005C4171 /* NewsFetcher.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NewsFetcher.m; sourceTree = "<group>"; };
 		D6FBF58120A9AB8C0071C0B4 /* ObjcNewsFeedTableView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ObjcNewsFeedTableView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6FBF58420A9AB8C0071C0B4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		D6FBF58520A9AB8C0071C0B4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -176,6 +179,8 @@
 				D6FBF5C520A9AFDD0071C0B4 /* News.m */,
 				D6FBF5C720A9AFFE0071C0B4 /* NewsBuilder.h */,
 				D6FBF5C820A9AFFE0071C0B4 /* NewsBuilder.m */,
+				D66B075F20B44999005C4171 /* NewsFetcher.h */,
+				D66B076020B44999005C4171 /* NewsFetcher.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -352,6 +357,7 @@
 				D6FBF5C920A9AFFE0071C0B4 /* NewsBuilder.m in Sources */,
 				D6FBF5CC20A9B08A0071C0B4 /* UIImageView+Extension.m in Sources */,
 				D6FBF58620A9AB8C0071C0B4 /* AppDelegate.m in Sources */,
+				D66B076120B44999005C4171 /* NewsFetcher.m in Sources */,
 				D64F517420AB0BD200B44B40 /* CustomLabel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

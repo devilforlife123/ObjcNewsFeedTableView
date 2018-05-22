@@ -13,9 +13,11 @@
 #import "NewsTableViewCell.h"
 #import "News.h"
 #import "Hudloading.h"
+#import "NewsFetcher.h"
 
 @interface MainTableViewController ()
 @property(nonatomic,strong)NSArray * newsFeed;
+@property(nonatomic,strong)NewsFetcher * newsFetcher;
 @property(nonatomic,strong)UIRefreshControl * refreshControl;
 @end
 
@@ -41,7 +43,7 @@
     self.refreshControl = [[UIRefreshControl alloc]init];
     [self.refreshControl addTarget:self action:@selector(refreshTheData) forControlEvents:UIControlEventValueChanged];
     [self.newsTable addSubview:self.refreshControl];
-    
+    self.newsFetcher = [[NewsFetcher alloc]init];
     //Call the makeRequest to request the data
     [self makeDataRequests];
 }
@@ -64,34 +66,33 @@
 }
 
 -(void)makeDataRequests{
-    
-    NSError * error;
-    //Grab the string handle
-    NSString *string = [NSString stringWithContentsOfURL:[NSURL URLWithString:kNewsFeedURL]encoding:NSISOLatin1StringEncoding error:&error];
-    
-    //Get the NSData from the string
-    NSData *retrievedData = [string dataUsingEncoding:NSUTF8StringEncoding];
-    
-    //Get the jsonObject
-    id jsonObject = [NSJSONSerialization JSONObjectWithData:retrievedData options:kNilOptions error:&error];
-    
-    if(error){
-        //Error Handling
-        //Show the alertController
+    __weak MainTableViewController *weakSelf = self;
+    [self.newsFetcher searchNewsItemForURLString:kNewsFeedURL withCompletionBlock:^(NSString *newsTitle, NSArray *newsArray, NSError *error) {
         
-        UIAlertController *alertController = [UIAlertController  alertControllerWithTitle:@"Error Alert"  message:error.localizedDescription  preferredStyle:UIAlertControllerStyleAlert];
-        [alertController addAction:[UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:^(UIAlertAction *action) {
-            [self dismissViewControllerAnimated:YES completion:nil];
-        }]];
-        [self presentViewController:alertController animated:YES completion:nil];
+        if(error){
+            //Error Handling
+            //Show the alertController
+            
+            UIAlertController *alertController = [UIAlertController  alertControllerWithTitle:@"Error Alert"  message:error.localizedDescription  preferredStyle:UIAlertControllerStyleAlert];
+            [alertController addAction:[UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:^(UIAlertAction *action) {
+                [weakSelf dismissViewControllerAnimated:YES completion:nil];
+            }]];
+            dispatch_async(dispatch_get_main_queue(), ^{
+                [weakSelf presentViewController:alertController animated:YES completion:nil];
+            });
+            
+        }else{
+            //Parse the jsonObject and create an array and store the dictionary
+            weakSelf.title = newsTitle;
+            weakSelf.newsFeed = newsArray;
+            dispatch_async(dispatch_get_main_queue(), ^{
+                [weakSelf.newsTable reloadData];
+            });
+        }
         
-    }else{
-        //Parse the jsonObject and create an array and store the dictionary
-        self.title = [jsonObject objectForKey:@"title"];
-        self.newsFeed = [NewsBuilder newsFromJSON:jsonObject];
-    }
-    
-    [self.newsTable reloadData];
+        
+        
+    }];
 }
 
 - (void)didReceiveMemoryWarning {
